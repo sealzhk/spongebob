@@ -8,6 +8,45 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="LnL-th-5le">
+            <objects>
+                <viewController id="kLt-lu-bMi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgg-2f-QGu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-Je-5Gd">
+                                <rect key="frame" x="20" y="375" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FZm-Y3-rj4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Have a nice day! :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95o-Wd-YDD">
+                                <rect key="frame" x="115" y="442" width="184" height="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bd5-Je-5Gd" firstAttribute="centerX" secondItem="Vtw-p6-utI" secondAttribute="centerX" id="5Dp-0D-GBb"/>
+                            <constraint firstItem="bd5-Je-5Gd" firstAttribute="leading" secondItem="Vtw-p6-utI" secondAttribute="leading" constant="20" id="5vE-L8-gB7"/>
+                            <constraint firstItem="bd5-Je-5Gd" firstAttribute="centerY" secondItem="Vtw-p6-utI" secondAttribute="centerY" id="E78-Vq-0cb"/>
+                            <constraint firstItem="95o-Wd-YDD" firstAttribute="centerX" secondItem="bd5-Je-5Gd" secondAttribute="centerX" id="PHL-6K-VXN"/>
+                            <constraint firstItem="95o-Wd-YDD" firstAttribute="centerY" secondItem="bd5-Je-5Gd" secondAttribute="centerY" id="Q4l-lg-lqj"/>
+                            <constraint firstItem="Vtw-p6-utI" firstAttribute="trailing" secondItem="bd5-Je-5Gd" secondAttribute="trailing" constant="20" id="kbH-1k-uPp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vtw-p6-utI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bmx-51-L42"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzO-5S-a02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-563"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dance" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,15 +106,31 @@
                                     <segue destination="d9z-iw-cnq" kind="show" id="07J-aT-Vq2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roN-pS-cWN">
+                                <rect key="frame" x="139.5" y="628" width="135" height="62.5"/>
+                                <color key="backgroundColor" red="0.21819779280000001" green="0.39712938669999998" blue="0.59412777419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62.5" id="Va0-Sk-ohO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Good mood">
+                                    <color key="titleColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kLt-lu-bMi" kind="show" id="1CD-73-eiJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.38795202969999998" green="0.65473121400000001" blue="0.85324144359999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vk0-ye-wF7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4br-2q-xRI"/>
+                            <constraint firstItem="roN-pS-cWN" firstAttribute="top" secondItem="vle-Zs-FZW" secondAttribute="bottom" constant="50" id="5rc-vj-kf0"/>
                             <constraint firstItem="vle-Zs-FZW" firstAttribute="centerX" secondItem="Vk0-ye-wF7" secondAttribute="centerX" id="Abz-TS-Ogk"/>
                             <constraint firstItem="2sd-Wr-hXm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Eia-v7-RSw"/>
                             <constraint firstItem="2sd-Wr-hXm" firstAttribute="top" secondItem="qIJ-XK-uLp" secondAttribute="bottom" constant="10" id="JCT-m3-f9x"/>
                             <constraint firstItem="qIJ-XK-uLp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="KXI-Zw-ut8"/>
                             <constraint firstItem="vle-Zs-FZW" firstAttribute="top" secondItem="YUM-P4-WUm" secondAttribute="bottom" constant="50" id="KaD-ss-rEq"/>
+                            <constraint firstItem="roN-pS-cWN" firstAttribute="centerX" secondItem="Vk0-ye-wF7" secondAttribute="centerX" id="OJg-Yw-LEs"/>
                             <constraint firstItem="Vk0-ye-wF7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P1H-5z-9ae"/>
                             <constraint firstItem="qIJ-XK-uLp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="cbK-Ne-Rwh"/>
                             <constraint firstItem="YUM-P4-WUm" firstAttribute="centerX" secondItem="Vk0-ye-wF7" secondAttribute="centerX" id="e3U-Q8-DrQ"/>
